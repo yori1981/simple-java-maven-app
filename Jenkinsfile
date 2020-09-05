@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'maven:3-alpine'
-            args '-v /Users/yori/Project/buildTools/apache-maven-3.6.1/repository:/root/.m2'
+            args '-v /Users/yori/Project/buildTools/apache-maven-3.6.1:/root/.m2'
         }
     }
     stages {
